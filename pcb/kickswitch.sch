@@ -32,7 +32,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:cmos_ieee
-LIBS:kickswitch-cache
+LIBS:ROMs
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -92,16 +92,12 @@ F 3 "" H 2550 5300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	800  5700 1050 5700
-Wire Wire Line
-	1050 5700 1950 5700
-Wire Wire Line
-	1950 5700 5450 5700
+	800  5700 5450 5700
 $Comp
-L GND #PWR?
+L GND #PWR1
 U 1 1 5AF89539
 P 800 5700
-F 0 "#PWR?" H 800 5450 50  0001 C CNN
+F 0 "#PWR1" H 800 5450 50  0001 C CNN
 F 1 "GND" H 800 5550 50  0000 C CNN
 F 2 "" H 800 5700 50  0001 C CNN
 F 3 "" H 800 5700 50  0001 C CNN
@@ -109,10 +105,10 @@ F 3 "" H 800 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x07 J?
+L Conn_01x07 J1
 U 1 1 5AF89555
 P 800 3350
-F 0 "J?" H 800 3750 50  0000 C CNN
+F 0 "J1" H 800 3750 50  0000 C CNN
 F 1 "Conn_01x07" H 800 2950 50  0000 C CNN
 F 2 "" H 800 3350 50  0001 C CNN
 F 3 "" H 800 3350 50  0001 C CNN
@@ -120,30 +116,20 @@ F 3 "" H 800 3350 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	950  2550 1200 2550
-Wire Wire Line
-	1200 2550 1200 2550
-Wire Wire Line
-	1200 2550 5350 2550
+	950  2550 5350 2550
 Wire Wire Line
 	1200 2550 1200 3050
 Wire Wire Line
 	1200 3050 1000 3050
 Connection ~ 1200 2550
 Wire Wire Line
-	1000 3550 1200 3550
-Wire Wire Line
-	1200 3550 2050 3550
+	1000 3550 2050 3550
 Wire Wire Line
 	2050 3550 2050 5200
 Wire Wire Line
-	1000 3650 1150 3650
+	1000 3650 1950 3650
 Wire Wire Line
-	1150 3650 1950 3650
-Wire Wire Line
-	1950 3650 1950 3900
-Wire Wire Line
-	1950 3900 1950 5300
+	1950 3650 1950 5300
 Wire Wire Line
 	1950 5300 2050 5300
 Wire Wire Line
@@ -152,9 +138,7 @@ Wire Wire Line
 	1950 5400 1950 5700
 Connection ~ 1950 5700
 Wire Wire Line
-	3050 5300 3100 5300
-Wire Wire Line
-	3100 5300 5450 5300
+	3050 5300 5450 5300
 Text Label 5250 5250 0    60   ~ 0
 A19
 Wire Wire Line
@@ -169,17 +153,11 @@ Wire Wire Line
 Wire Wire Line
 	2550 3250 2550 4350
 Wire Wire Line
-	1000 3250 1350 3250
-Wire Wire Line
-	1350 3250 2550 3250
+	1000 3250 2550 3250
 Wire Wire Line
 	4300 4450 2450 4450
 Wire Wire Line
-	1000 3450 1250 3450
-Wire Wire Line
-	1250 3450 2450 3450
-Wire Wire Line
-	2450 3450 2900 3450
+	1000 3450 2900 3450
 Wire Wire Line
 	4300 4950 4300 4550
 Wire Wire Line
@@ -189,9 +167,7 @@ A17
 Wire Wire Line
 	2450 4450 2450 3450
 Wire Wire Line
-	1000 3350 1300 3350
-Wire Wire Line
-	1300 3350 3050 3350
+	1000 3350 3050 3350
 Wire Wire Line
 	3050 3350 3050 3700
 Wire Wire Line
@@ -209,10 +185,10 @@ A18
 Text Notes 8300 2500 0    60   ~ 0
 S   ?   ?  p1\nR  p42 p1  p2\n   A19 A18 A17\ni1  0   0   0\ni2  0   0   1\ni3  0   1   0\ni4  0   1   1\ni5  1   0   x\ni6  1   1   x\n\nA19 = (i5 | i6)\nA18 = (i3 | i4) | i6\nA17 = (i2 | i4) | (A19 & a17[in])\n\n\n\nPin 31 high - already provided by socket?\n4.7kohm pullups on address pins? maybe not needed.
 $Comp
-L VCC #PWR?
+L VCC #PWR2
 U 1 1 5B090894
 P 950 2550
-F 0 "#PWR?" H 950 2400 50  0001 C CNN
+F 0 "#PWR2" H 950 2400 50  0001 C CNN
 F 1 "VCC" H 950 2700 50  0000 C CNN
 F 2 "" H 950 2550 50  0001 C CNN
 F 3 "" H 950 2550 50  0001 C CNN
@@ -233,15 +209,7 @@ $EndComp
 Wire Wire Line
 	1350 4200 1050 4200
 Wire Wire Line
-	1050 4200 1050 4500
-Wire Wire Line
-	1050 4500 1050 4800
-Wire Wire Line
-	1050 4800 1050 5100
-Wire Wire Line
-	1050 5100 1050 5400
-Wire Wire Line
-	1050 5400 1050 5700
+	1050 4200 1050 5700
 Connection ~ 1050 5700
 Wire Wire Line
 	1350 4500 1050 4500

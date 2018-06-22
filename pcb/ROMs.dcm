@@ -1,0 +1,25 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP M27C160
+D PA28F400BX-T/B Flash EEProm 4-MBIT (256Kx16bits, 512Kx8bits) 5V, 12V Prog
+K EEPROM FLASH 4MO
+F http://download.intel.com/design/archives/flash/docs/29045101.pdf
+$ENDCMP
+#
+$CMP MC23C4100_socket
+D PA28F400BX-T/B Flash EEProm 4-MBIT (256Kx16bits, 512Kx8bits) 5V, 12V Prog
+K EEPROM FLASH 4MO
+F http://download.intel.com/design/archives/flash/docs/29045101.pdf
+$ENDCMP
+#
+$CMP SN74LVC1G08
+D And2
+K TTL and2
+$ENDCMP
+#
+$CMP SN74LVC1G32
+D Or 2 inputs
+K TTL Or2
+$ENDCMP
+#
+#End Doc Library

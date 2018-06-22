@@ -1,4 +1,4 @@
-update=2018-05-13 21:38:43
+update=2018-06-22 08:40:19
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,3 +62,4 @@ LibName30=atmel
 LibName31=contrib
 LibName32=valves
 LibName33=cmos_ieee
+LibName34=ROMs
