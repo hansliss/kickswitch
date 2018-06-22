@@ -1,4 +1,4 @@
-update=2018-06-22 08:40:19
+update=2018-06-22 08:49:51
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../Libraries
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -61,5 +61,4 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
-LibName33=cmos_ieee
-LibName34=ROMs
+LibName33=ROMs
