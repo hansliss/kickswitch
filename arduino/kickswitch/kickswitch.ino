@@ -5,6 +5,8 @@
  * ignore the original A17 (for the first four) or use it (for the last two). The circuit will allow us to use PC0 to pass
  * through the original A17 to the ROM, or leave that off and use PC1 to set it HIGH/LOW. A18 and A19 are controlled by
  * PC2 and PC3, respectively. So we use a simple switch statement and set the appropriate values whenever the switch changes.
+ * 
+ * TODO: Update this to make use of the additional I/O pins on the new PCB!
  */
 
 int pin0 = 11;
