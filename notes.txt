@@ -2,7 +2,7 @@ Main PCB
 
 D1: https://www.elfa.se/en/small-signal-switching-diode-sod-123f-75-rnd-components-rnd-1n4148fl/p/30092888
 C1, C2: https://www.elfa.se/en/capacitor-22-pf-0603-rnd-components-rnd-150mt18n220f100/p/30066212
-C3: https://www.elfa.se/en/capacitor-100-nf-10-vdc-0603-wuerth-elektronik-885012206020/p/30067780
+C3: https://www.elfa.se/en/capacitor-uf-16-0603-kemet-c0603x104k4ractu/p/30111165
 R1: https://www.elfa.se/en/smd-resistor-thick-film-10-kohm-0603-rnd-components-rnd-1550603saf1002t5e/p/30056457
 U4: https://www.elfa.se/en/plug-adapter-dil-40-gold-plated-preci-dip-150-10-640-00-018101/p/14814851
 Y1: https://www.elfa.se/en/quartz-hc49us-16-mhz-auris-16-00000m-hc49us-30-30-d32/p/17452832
