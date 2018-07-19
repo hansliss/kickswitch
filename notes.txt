@@ -1,20 +1,9 @@
-S   ?   ?  p1
-R  p42 p1  p2
-   A19 A18 A17
-i1  0   0   0
-i2  0   0   1
-i3  0   1   0
-i4  0   1   1
-i5  1   0   x
-i6  1   1   x
-
-A19 = (i5 | i6)
-A18 = (i3 | i4) | i6
-A17 = (i2 | i4) | (A19 & a17[in])
-
-
-Questions
---------------------
-Will it be fast enough?
-Pin 31 high - already provided by socket?
-4.7kohm pullups on address pins? maybe not needed.
+D1: https://www.elfa.se/en/small-signal-switching-diode-sod-123f-75-rnd-components-rnd-1n4148fl/p/30092888
+C1, C2: https://www.elfa.se/en/capacitor-22-pf-0603-rnd-components-rnd-150mt18n220f100/p/30066212
+C3: https://www.elfa.se/en/capacitor-100-nf-10-vdc-0603-wuerth-elektronik-885012206020/p/30067780
+R1: https://www.elfa.se/en/smd-resistor-thick-film-10-kohm-0603-rnd-components-rnd-1550603saf1002t5e/p/30056457
+U4: https://www.elfa.se/en/plug-adapter-dil-40-gold-plated-preci-dip-150-10-640-00-018101/p/14814851
+Y1: https://www.elfa.se/en/quartz-hc49us-16-mhz-auris-16-00000m-hc49us-30-30-d32/p/17452832
+U1: https://www.elfa.se/en/logic-ic-sot-23-sn74lvc1g08-texas-instruments-sn74lvc1g08dbvr/p/30023169
+U2: https://www.elfa.se/en/logic-ic-sot-23-sn74lvc1g32-texas-instruments-sn74lvc1g32dbvr/p/30023189
+U3: Atmega328P - Arduino Uno
