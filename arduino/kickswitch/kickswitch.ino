@@ -5,13 +5,14 @@
  * ignore the original A17 (for the first four) or use it (for the last two). The circuit will allow us to use PC0 to pass
  * through the original A17 to the ROM, or leave that off and use PC1 to set it HIGH/LOW. A18 and A19 are controlled by
  * PC2 and PC3, respectively. So we use a simple switch statement and set the appropriate values whenever the switch changes.
- * 
- * TODO: Update this to make use of the additional I/O pins on the new PCB!
  */
 
-int pin0 = 11;
-int pin1 = 12;
-int pin2 = 13;
+// no pins = "0" selected
+int pin1 = 2; // PD2 = "1" selected
+int pin2 = 3; // PD3 = "2" selected
+int pin3 = 4; // PD4 = "3" selected
+int pin4 = 5; // PD5 = "4" selected
+int pin5 = 7; // PD7 = "5" selected
 
 int pc0 = 14;
 int pc1 = 15;
@@ -19,9 +20,11 @@ int pc2 = 16;
 int pc3 = 17;
 
 void setup() {
-  pinMode(pin0, INPUT);
-  pinMode(pin1, INPUT);
-  pinMode(pin2, INPUT);
+  pinMode(pin1, INPUT_PULLUP);
+  pinMode(pin2, INPUT_PULLUP);
+  pinMode(pin3, INPUT_PULLUP);
+  pinMode(pin4, INPUT_PULLUP);
+  pinMode(pin5, INPUT_PULLUP);
   pinMode(pc0, OUTPUT);
   pinMode(pc1, OUTPUT);
   pinMode(pc2, OUTPUT);
@@ -30,7 +33,12 @@ void setup() {
 
 void loop() {
   int oldv = 99;
-  int v = ((digitalRead(pin0) == HIGH)?0:1) | ((digitalRead(pin1) == HIGH)?0:2) | ((digitalRead(pin2) == HIGH)?0:4);
+  int p1 = digitalRead(pin1);
+  int p2 = digitalRead(pin2);
+  int p3 = digitalRead(pin3);
+  int p4 = digitalRead(pin4);
+  int p5 = digitalRead(pin5);
+  int v = (p5 == LOW)?5:((p4 == LOW)?4:((p3 == LOW)?3:((p2 == LOW)?2:((p1 == LOW)?1:0))));
   if (v != oldv) {
     switch (v) {
       case 0:
