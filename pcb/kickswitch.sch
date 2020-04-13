@@ -1,39 +1,5 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:ROMs
-LIBS:kickswitch-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -48,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ATMEGA328P-PU U3
+L kickswitch-rescue:ATMEGA328P-PU U3
 U 1 1 5B091313
 P 6100 3550
 F 0 "U3" H 5350 4800 50  0000 L BNN
@@ -63,7 +29,7 @@ A17in
 Text Label 10450 1850 0    60   ~ 0
 A17out
 $Comp
-L Crystal Y1
+L kickswitch-rescue:Crystal Y1
 U 1 1 5B092CDE
 P 9900 3100
 F 0 "Y1" H 9900 3250 50  0000 C CNN
@@ -74,7 +40,7 @@ F 3 "" H 9900 3100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C1
+L kickswitch-rescue:C_Small C1
 U 1 1 5B092DCA
 P 10250 3150
 F 0 "C1" H 10260 3220 50  0000 L CNN
@@ -85,7 +51,7 @@ F 3 "" H 10250 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C2
+L kickswitch-rescue:C_Small C2
 U 1 1 5B092E01
 P 10050 3250
 F 0 "C2" H 10060 3320 50  0000 L CNN
@@ -96,7 +62,7 @@ F 3 "" H 10050 3250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R1
+L kickswitch-rescue:R R1
 U 1 1 5B093167
 P 6250 1750
 F 0 "R1" V 6330 1750 50  0000 C CNN
@@ -107,7 +73,7 @@ F 3 "" H 6250 1750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L D D1
+L kickswitch-rescue:D D1
 U 1 1 5B094007
 P 6250 1500
 F 0 "D1" H 6250 1600 50  0000 C CNN
@@ -118,7 +84,7 @@ F 3 "" H 6250 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C3
+L kickswitch-rescue:C_Small C3
 U 1 1 5B094117
 P 9150 4900
 F 0 "C3" H 9160 4970 50  0000 L CNN
@@ -133,7 +99,7 @@ A17_orig
 Text Label 7100 3400 0    60   ~ 0
 A17_set
 $Comp
-L MC23C4100_socket U4
+L kickswitch-rescue:MC23C4100_socket U4
 U 1 1 5B09495B
 P 6450 7200
 F 0 "U4" H 6250 8625 50  0000 R CNN
@@ -144,7 +110,7 @@ F 3 "" H 6450 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L M27C160 U5
+L kickswitch-rescue:M27C160 U5
 U 1 1 5B095B63
 P 12050 7350
 F 0 "U5" H 11850 8775 50  0000 R CNN
@@ -316,7 +282,6 @@ Text Label 5700 7500 0    60   ~ 0
 A15
 Text Label 5700 7600 0    60   ~ 0
 A16
-NoConn ~ 5850 8400
 Entry Wire Line
 	5550 5900 5650 6000
 Entry Wire Line
@@ -421,7 +386,7 @@ Entry Wire Line
 	11150 7650 11250 7750
 NoConn ~ 6350 8700
 $Comp
-L SN74LVC1G08 U1
+L kickswitch-rescue:SN74LVC1G08 U1
 U 1 1 5B0A16D2
 P 8200 1750
 F 0 "U1" H 8200 1800 50  0000 C CNN
@@ -432,7 +397,7 @@ F 3 "" H 8200 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SN74LVC1G32 U2
+L kickswitch-rescue:SN74LVC1G32 U2
 U 1 1 5B0A2AA8
 P 10150 1850
 F 0 "U2" H 10150 1900 50  0000 C CNN
@@ -443,7 +408,7 @@ F 3 "" H 10150 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_02x10_Odd_Even J1
+L kickswitch-rescue:Conn_02x10_Odd_Even J1
 U 1 1 5B2D8C5D
 P 4350 6500
 F 0 "J1" H 4400 7000 50  0000 C CNN
@@ -486,7 +451,7 @@ PD4
 Text Label 4000 6200 0    60   ~ 0
 PD6
 $Comp
-L R_Network08 RN1
+L kickswitch-rescue:R_Network08 RN1
 U 1 1 5B3DCCF4
 P 9750 6300
 F 0 "RN1" V 9250 6300 50  0000 C CNN
@@ -497,7 +462,7 @@ F 3 "" H 9750 6300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R_Network09 RN2
+L kickswitch-rescue:R_Network09 RN2
 U 1 1 5B3DCD27
 P 9750 7300
 F 0 "RN2" V 9250 7300 50  0000 C CNN
@@ -561,19 +526,19 @@ Text Label 9500 6900 0    60   ~ 0
 A8
 Text Label 9500 7000 0    60   ~ 0
 A9
-Text Label 9500 7100 0    60   ~ 0
+Text Label 9450 7100 0    60   ~ 0
 A10
-Text Label 9500 7200 0    60   ~ 0
+Text Label 9450 7200 0    60   ~ 0
 A11
-Text Label 9500 7300 0    60   ~ 0
+Text Label 9450 7300 0    60   ~ 0
 A12
-Text Label 9500 7400 0    60   ~ 0
+Text Label 9450 7400 0    60   ~ 0
 A13
-Text Label 9500 7500 0    60   ~ 0
+Text Label 9450 7500 0    60   ~ 0
 A14
-Text Label 9500 7600 0    60   ~ 0
+Text Label 9450 7600 0    60   ~ 0
 A15
-Text Label 9500 7700 0    60   ~ 0
+Text Label 9450 7700 0    60   ~ 0
 A16
 Text Label 4650 6900 0    60   ~ 0
 ~RESET
@@ -592,19 +557,17 @@ Wire Wire Line
 Wire Wire Line
 	7100 3400 9550 3400
 Wire Wire Line
-	10750 1850 10750 1850
-Wire Wire Line
 	7100 3500 10650 3500
 Wire Wire Line
 	7100 3600 10550 3600
 Wire Wire Line
-	9700 2950 10250 2950
+	9700 2950 9900 2950
 Wire Wire Line
 	9700 3050 9700 2950
 Wire Wire Line
 	7100 3050 9700 3050
 Wire Wire Line
-	9700 3250 9950 3250
+	9700 3250 9900 3250
 Wire Wire Line
 	9700 3150 9700 3250
 Wire Wire Line
@@ -616,23 +579,23 @@ Connection ~ 9900 3250
 Wire Wire Line
 	10150 3250 10250 3250
 Wire Wire Line
-	5200 4650 5200 7000
+	5200 4650 5200 4750
 Wire Wire Line
 	10250 3250 10250 5150
 Wire Wire Line
 	8550 5150 8550 8700
 Connection ~ 8550 5150
 Wire Wire Line
-	5200 1750 5200 2750
+	5200 1750 5200 2450
 Wire Wire Line
-	3850 1750 6100 1750
+	3850 1750 4950 1750
 Connection ~ 5200 2450
 Wire Wire Line
 	7100 3900 7500 3900
 Wire Wire Line
-	7500 1750 7500 5250
+	7500 1750 7500 3900
 Wire Wire Line
-	6400 1750 7500 1750
+	6400 1750 6500 1750
 Connection ~ 5200 1750
 Wire Wire Line
 	4950 1750 4950 5500
@@ -690,22 +653,18 @@ Wire Wire Line
 Connection ~ 9150 5150
 Wire Wire Line
 	9150 4600 9150 4800
-Connection ~ 9150 4600
-Wire Wire Line
-	2500 7700 5850 7700
 Wire Wire Line
 	2500 7700 2500 1250
 Wire Wire Line
 	6350 5300 6350 5700
 Wire Wire Line
-	3850 5300 11950 5300
+	3850 5300 6350 5300
 Wire Wire Line
 	3850 1750 3850 5300
-Connection ~ 6450 8700
 Wire Wire Line
 	11950 5300 11950 5850
 Wire Wire Line
-	11950 8850 14250 8850
+	11950 8850 12050 8850
 Wire Wire Line
 	14250 8850 14250 5150
 Connection ~ 12050 8850
@@ -775,8 +734,6 @@ Wire Wire Line
 	7050 7400 7250 7400
 Wire Wire Line
 	7050 7500 7250 7500
-Wire Bus Line
-	7350 6100 7350 9000
 Wire Wire Line
 	12650 6150 12850 6150
 Wire Wire Line
@@ -811,8 +768,6 @@ Wire Wire Line
 	12650 7650 12850 7650
 Wire Bus Line
 	7350 9000 12950 9000
-Wire Bus Line
-	12950 9000 12950 6250
 Wire Wire Line
 	5850 6000 5650 6000
 Wire Wire Line
@@ -848,11 +803,7 @@ Wire Wire Line
 Wire Wire Line
 	5650 7600 5850 7600
 Wire Bus Line
-	5550 5600 5550 7500
-Wire Bus Line
 	5550 5600 11150 5600
-Wire Bus Line
-	11150 5600 11150 7650
 Wire Wire Line
 	11450 6150 11250 6150
 Wire Wire Line
@@ -891,22 +842,22 @@ Connection ~ 5200 4750
 Wire Wire Line
 	8800 1750 9550 1750
 Wire Wire Line
-	5600 1350 9950 1350
+	5600 1350 8000 1350
 Wire Wire Line
 	5600 1350 5600 1750
 Wire Wire Line
 	8000 1350 8000 1550
 Connection ~ 5600 1750
 Wire Wire Line
-	14250 5150 5200 5150
+	14250 5150 10450 5150
 Wire Wire Line
-	10250 5150 8550 5150
+	10250 5150 9150 5150
 Wire Wire Line
 	8550 8700 6450 8700
 Wire Wire Line
 	10450 2250 10450 5150
 Wire Wire Line
-	8000 2250 10450 2250
+	8000 2250 9950 2250
 Wire Wire Line
 	8000 2250 8000 1950
 Connection ~ 10450 5150
@@ -1004,11 +955,9 @@ Connection ~ 10950 5300
 Wire Wire Line
 	4900 5000 4900 6700
 Wire Wire Line
-	9950 5300 9950 6900
+	9950 5300 9950 5900
 Connection ~ 9950 5300
 Connection ~ 9950 5900
-Wire Bus Line
-	9300 5600 9300 7600
 Wire Wire Line
 	9400 5900 9550 5900
 Wire Wire Line
@@ -1122,4 +1071,87 @@ Text Label 7100 3500 0    60   ~ 0
 A18_set
 Text Label 7100 3600 0    60   ~ 0
 A19_set
+Wire Wire Line
+	9900 2950 10250 2950
+Wire Wire Line
+	9900 3250 9950 3250
+Wire Wire Line
+	8550 5150 5200 5150
+Wire Wire Line
+	5200 2450 5200 2750
+Wire Wire Line
+	5200 1750 5600 1750
+Wire Wire Line
+	4950 1750 5200 1750
+Wire Wire Line
+	7500 3900 7500 4600
+Wire Wire Line
+	6500 1750 7500 1750
+Wire Wire Line
+	6000 1750 6100 1750
+Wire Wire Line
+	7500 4600 7500 5250
+Wire Wire Line
+	9150 5150 8550 5150
+Wire Wire Line
+	12050 8850 14250 8850
+Wire Wire Line
+	5200 4750 5200 5150
+Wire Wire Line
+	5600 1750 6000 1750
+Wire Wire Line
+	10450 5150 10250 5150
+Wire Wire Line
+	8000 1350 9950 1350
+Wire Wire Line
+	9950 2250 10450 2250
+Wire Wire Line
+	5200 5150 5200 7000
+Wire Wire Line
+	10950 5300 11950 5300
+Wire Wire Line
+	9950 5300 10950 5300
+Wire Wire Line
+	9950 5900 9950 6900
+Wire Wire Line
+	6350 5300 9950 5300
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5E95C176
+P 4250 8000
+F 0 "J2" H 4168 7675 50  0000 C CNN
+F 1 "Conn_01x03" H 4168 7766 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 4250 8000 50  0001 C CNN
+F 3 "~" H 4250 8000 50  0001 C CNN
+	1    4250 8000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2500 7700 4800 7700
+Wire Wire Line
+	4800 7700 4800 8000
+Wire Wire Line
+	4800 8000 4450 8000
+Wire Wire Line
+	4450 7900 5300 7900
+Wire Wire Line
+	5300 7900 5300 7700
+Wire Wire Line
+	5300 7700 5850 7700
+Wire Wire Line
+	5850 8400 5300 8400
+Wire Wire Line
+	5300 8400 5300 8100
+Wire Wire Line
+	5300 8100 4450 8100
+Wire Bus Line
+	7350 6100 7350 9000
+Wire Bus Line
+	12950 6250 12950 9000
+Wire Bus Line
+	5550 5600 5550 7500
+Wire Bus Line
+	11150 5600 11150 7650
+Wire Bus Line
+	9300 5600 9300 7600
 $EndSCHEMATC

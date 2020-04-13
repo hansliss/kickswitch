@@ -9,7 +9,3 @@ Y1: https://www.elfa.se/en/quartz-hc49us-16-mhz-auris-16-00000m-hc49us-30-30-d32
 U1: https://www.elfa.se/en/logic-ic-sot-23-sn74lvc1g08-texas-instruments-sn74lvc1g08dbvr/p/30023169
 U2: https://www.elfa.se/en/logic-ic-sot-23-sn74lvc1g32-texas-instruments-sn74lvc1g32dbvr/p/30023189
 U3: Atmega328P - Arduino Uno
-
-Encoder
-RN1: https://www.elfa.se/en/fixed-resistor-network-kohm-bourns-cay17-472jalf/p/30037129
-U1: https://www.elfa.se/en/logic-ic-so-16-sn74hc148-texas-instruments-sn74hc148d/p/17379828
